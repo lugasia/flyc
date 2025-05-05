@@ -25,7 +25,7 @@ logo_sidebar_cols = st.sidebar.columns([1, 2, 1])
 with logo_sidebar_cols[1]:
     try:
         logo = Image.open("FLYCOMM@2x-768x453.png")
-        st.image(logo, use_column_width=True)
+        st.image(logo, use_container_width=True)
     except FileNotFoundError:
         st.warning("Logo image not found.")
 
